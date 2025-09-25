@@ -12,6 +12,7 @@ const TicketSection = ({ fetchPromise }) => {
     if (!completeCard.find((elem) => elem.id === issue.id)) {
       setCompleteCard([...completeCard, issue]);
       setSelectedCards(selectedCards.filter((elem) => elem.id !== issue.id));
+      setData(data.filter((elem) => elem.id !== issue.id));
     }
   };
 
@@ -29,7 +30,7 @@ const TicketSection = ({ fetchPromise }) => {
               Customer Section
             </h1>
             <div className="grid grid-cols-1 md:grid-cols-2">
-              {initialData.map((issue, index) => {
+              {data.map((issue, index) => {
                 return (
                   <Card
                     key={index}
