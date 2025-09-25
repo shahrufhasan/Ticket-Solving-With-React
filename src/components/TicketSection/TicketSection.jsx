@@ -2,6 +2,8 @@ import React, { use, useState } from "react";
 import Container from "../Container/Container";
 import Card from "../Card/Card";
 import CounterBox from "../CounterBox/CounterBox";
+import { IoCheckmarkDoneCircleSharp } from "react-icons/io5";
+import { MdCancel } from "react-icons/md";
 
 const TicketSection = ({ fetchPromise }) => {
   const initialData = use(fetchPromise);
@@ -53,14 +55,14 @@ const TicketSection = ({ fetchPromise }) => {
               selectedCards.map((issue) => (
                 <div
                   key={issue.id}
-                  className="bg-white p-5 rounded-md shadow mb-2"
+                  className="bg-gray-100 p-2 rounded-md shadow-md mb-2"
                 >
                   <h2 className="font-semibold text-center mb-4">
                     {issue.title}
                   </h2>
                   <button
                     onClick={() => handleComplete(issue)}
-                    class="bg-green-500 hover:bg-green-600 text-white font-semibold w-full py-2 px-4 rounded"
+                    class="bg-green-500 hover:bg-green-600 text-white font-semibold w-full py-1.5 px-4 rounded"
                   >
                     Task Complete
                   </button>
@@ -69,7 +71,7 @@ const TicketSection = ({ fetchPromise }) => {
             ) : (
               <div className="text-center mt-5">
                 <p className="text-gray-600 text-lg">No task in progress</p>
-                <p className="text-gray-400 text-md">
+                <p className="text-gray-400 text-md font-thin">
                   Click on a ticket to start working
                 </p>
               </div>
@@ -84,17 +86,20 @@ const TicketSection = ({ fetchPromise }) => {
                   </div>
                   {completeCard.map((issue, index) => (
                     <div>
-                      {" "}
                       <div
                         key={index}
-                        className="bg-white p-4 rounded-md shadow mb-2"
+                        className="bg-green-100 p-1.5 rounded-md shadow mb-2"
                       >
                         <h3 className="font-semibold text-center mb-2">
                           {issue.title}
                         </h3>
                         <div className="flex justify-between mt-4">
-                          <p className="text-green-500">✔️ Completed</p>
-                          <button className="text-gray-500">
+                          <p className="text-green-500 flex items-center gap-1">
+                            <IoCheckmarkDoneCircleSharp className="text-xl" />
+                            Completed
+                          </p>
+                          <button className="text-gray-500 font-thin flex items-center gap-1">
+                            <MdCancel />
                             Click To Remove
                           </button>
                         </div>

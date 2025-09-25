@@ -1,26 +1,38 @@
 import React from "react";
 import { SlCalender } from "react-icons/sl";
+import { FaCircle } from "react-icons/fa";
 
-const Card = ({ issue, setSelectedCards, selectedCards }) => {
+const Card = ({ issue, setSelectedCards, selectedCards, data, setData }) => {
   const handleClick = () => {
     if (!selectedCards.find((element) => element.id === issue.id)) {
       setSelectedCards([...selectedCards, issue]);
     }
+    setData(
+      data.map((elem) =>
+        elem.id == issue.id ? { ...elem, status: "In Progress" } : elem
+      )
+    );
   };
 
   return (
-    <div onClick={handleClick} className="bg-white m-5 rounded-md p-3">
+    <div
+      onClick={handleClick}
+      className="bg-white hover:bg-green-100 duration-400 ease-in-out m-5 rounded-md p-3 mb-9"
+    >
       <div className="flex justify-between">
         <h2 className="text-lg font-semibold">{issue.title}</h2>
         <button
-          className={`rounded-2xl px-3 ${
-            issue.status == "Open"
-              ? "bg-green-300"
-              : issue.status == "InProgress"
-              ? "bg-yellow-300"
-              : "bg-red-300"
+          className={`flex items-center gap-2 rounded-2xl px-3 ${
+            issue.status === "Open"
+              ? "bg-green-300 text-green-600"
+              : "bg-yellow-200 text-yellow-600"
           }`}
         >
+          <FaCircle
+            className={`w-3 h-3 ${
+              issue.status === "Open" ? "text-green-600" : "text-yellow-500"
+            }`}
+          />
           {issue.status}
         </button>
       </div>
