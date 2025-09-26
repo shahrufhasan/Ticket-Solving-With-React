@@ -10,8 +10,8 @@ const CounterBox = ({ selectedCards, completeCard }) => {
           className="h-62 rounded-lg flex justify-between items-center 
         bg-gradient-to-r from-[#632EE3] to-[#9F62F2] text-white"
         >
-          <div>
-            <img src={bgImg} alt="" />
+          <div className="h-full">
+            <img src={bgImg} className="h-full" alt="" />
           </div>
           <div className="flex flex-col justify-center items-center">
             <h2 className="text-2xl font-bold">In Progress</h2>
@@ -19,16 +19,16 @@ const CounterBox = ({ selectedCards, completeCard }) => {
               {selectedCards.length}
             </span>
           </div>
-          <div>
-            <img src={bgImg} className="scale-x-[-1]" alt="" />
+          <div className="h-full">
+            <img src={bgImg} className="scale-x-[-1] h-full" alt="" />
           </div>
         </div>
         <div
           className="h-62 rounded-lg flex justify-between items-center
          bg-gradient-to-r from-[#54CF68] to-[#00827A] text-white"
         >
-          <div>
-            <img src={bgImg} alt="" />
+          <div className="h-full">
+            <img src={bgImg} className="h-full" alt="" />
           </div>
           <div className="flex flex-col justify-center items-center">
             <h2 className="text-2xl font-bold">Resolved</h2>
@@ -36,8 +36,8 @@ const CounterBox = ({ selectedCards, completeCard }) => {
               {completeCard.length}
             </span>
           </div>
-          <div>
-            <img src={bgImg} className="scale-x-[-1]" alt="" />
+          <div className="h-full">
+            <img src={bgImg} className="scale-x-[-1] h-full" alt="" />
           </div>
         </div>
       </div>

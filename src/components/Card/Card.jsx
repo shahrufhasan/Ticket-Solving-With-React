@@ -7,7 +7,7 @@ const Card = ({ issue, setSelectedCards, selectedCards, data, setData }) => {
   const handleClick = () => {
     if (!selectedCards.find((element) => element.id === issue.id)) {
       setSelectedCards([...selectedCards, issue]);
-      toast.error("In Process");
+      toast.warn("In Process");
     }
     setData(
       data.map((elem) =>
@@ -19,7 +19,7 @@ const Card = ({ issue, setSelectedCards, selectedCards, data, setData }) => {
   return (
     <div
       onClick={handleClick}
-      className="bg-white hover:bg-green-100 duration-400 ease-in-out m-5 rounded-md p-3 mb-9"
+      className="bg-white shadow hover:bg-green-100 duration-400 ease-in-out m-5 rounded-md p-3 mb-9"
     >
       <div className="flex justify-between">
         <h2 className="text-lg font-semibold">{issue.title}</h2>

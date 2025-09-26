@@ -82,7 +82,7 @@
   },
   {
     "id": 1010,
-    "title": "Payment gateway integration",
+    "title": "Payment  integration",
     "description": "Integrate Stripe payment gateway to allow secure credit card and digital wallet payments, including error handling and transaction logging.",
     "customer": "Emma Johnson",
     "priority": "High",
