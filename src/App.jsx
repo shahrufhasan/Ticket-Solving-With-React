@@ -2,6 +2,7 @@ import React, { Suspense } from "react";
 import Navbar from "./components/Navbar/Navbar";
 import Footer from "./components/Footer/Footer";
 import TicketSection from "./components/TicketSection/TicketSection";
+import { ToastContainer } from "react-toastify";
 
 // Simple loader component
 const Loader = () => (
@@ -29,6 +30,7 @@ const App = () => {
         <TicketSection fetchPromise={fetchPromise} />
       </Suspense>
       <Footer />
+      <ToastContainer></ToastContainer>
     </>
   );
 };

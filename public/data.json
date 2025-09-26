@@ -3,7 +3,7 @@
     "id": 1001,
     "title": "Design homepage",
     "description": "Create a modern, responsive, and user-friendly design for the homepage, ensuring it aligns with brand guidelines and enhances user experience.",
-    "customer": "Acme Corp",
+    "customer": "Emma Johnson",
     "priority": "High",
     "status": "Open",
     "createdAt": "01/20/2024"
@@ -12,7 +12,7 @@
     "id": 1002,
     "title": "Fix login bug",
     "description": "Investigate and resolve the issue preventing users from logging in with their Google accounts, including testing on multiple devices and browsers.",
-    "customer": "Beta Ltd",
+    "customer": "Liam Smith",
     "priority": "Low",
     "status": "Open",
     "createdAt": "01/21/2024"
@@ -21,7 +21,7 @@
     "id": 1003,
     "title": "Update privacy policy",
     "description": "Revise the privacy policy to ensure GDPR compliance and update it with the latest legal requirements, clearly outlining data usage practices.",
-    "customer": "Acme Corp",
+    "customer": "Emma Johnson",
     "priority": "Medium",
     "status": "Open",
     "createdAt": "01/22/2024"
@@ -30,7 +30,7 @@
     "id": 1004,
     "title": "Implement search feature",
     "description": "Add an advanced search functionality to the product catalog that allows filtering by category, price, and ratings, improving user navigation.",
-    "customer": "Gamma Inc",
+    "customer": "Olivia Davis",
     "priority": "High",
     "status": "Open",
     "createdAt": "01/23/2024"
@@ -39,7 +39,7 @@
     "id": 1005,
     "title": "Email notification setup",
     "description": "Set up automated email notifications for new orders, shipping updates, and customer confirmations to improve communication and user satisfaction.",
-    "customer": "Delta LLC",
+    "customer": "Noah Wilson",
     "priority": "Medium",
     "status": "Open",
     "createdAt": "01/24/2024"
@@ -48,7 +48,7 @@
     "id": 1006,
     "title": "Mobile app testing",
     "description": "Conduct comprehensive testing on Android and iOS apps, including UI/UX testing, performance evaluation, and bug reporting for app stability.",
-    "customer": "Acme Corp",
+    "customer": "Emma Johnson",
     "priority": "High",
     "status": "Open",
     "createdAt": "01/25/2024"
@@ -57,7 +57,7 @@
     "id": 1007,
     "title": "SEO optimization",
     "description": "Optimize website content, meta tags, and images to improve search engine rankings and drive more organic traffic to the website.",
-    "customer": "Beta Ltd",
+    "customer": "Liam Smith",
     "priority": "Low",
     "status": "Open",
     "createdAt": "01/26/2024"
@@ -66,7 +66,7 @@
     "id": 1008,
     "title": "Database backup",
     "description": "Create automated daily backups of the database and ensure they are securely stored and easily retrievable for disaster recovery purposes.",
-    "customer": "Gamma Inc",
+    "customer": "Olivia Davis",
     "priority": "Medium",
     "status": "Open",
     "createdAt": "01/27/2024"
@@ -75,7 +75,7 @@
     "id": 1009,
     "title": "User profile page",
     "description": "Redesign the user profile page to include enhanced features such as profile picture upload, activity history, and personalized settings.",
-    "customer": "Delta LLC",
+    "customer": "Noah Wilson",
     "priority": "Medium",
     "status": "Open",
     "createdAt": "01/28/2024"
@@ -84,7 +84,7 @@
     "id": 1010,
     "title": "Payment gateway integration",
     "description": "Integrate Stripe payment gateway to allow secure credit card and digital wallet payments, including error handling and transaction logging.",
-    "customer": "Acme Corp",
+    "customer": "Emma Johnson",
     "priority": "High",
     "status": "Open",
     "createdAt": "01/29/2024"
@@ -93,7 +93,7 @@
     "id": 1011,
     "title": "Bug fix: cart issues",
     "description": "Identify and fix issues causing problems when adding items to the shopping cart, ensuring smooth checkout experience across devices.",
-    "customer": "Beta Ltd",
+    "customer": "Liam Smith",
     "priority": "Low",
     "status": "Open",
     "createdAt": "01/30/2024"
@@ -102,7 +102,7 @@
     "id": 1012,
     "title": "Analytics setup",
     "description": "Set up Google Analytics tracking for the new website, including conversion goals, event tracking, and generating performance reports for stakeholders.",
-    "customer": "Gamma Inc",
+    "customer": "Olivia Davis",
     "priority": "Medium",
     "status": "Open",
     "createdAt": "01/31/2024"
@@ -111,7 +111,7 @@
     "id": 1013,
     "title": "Newsletter design",
     "description": "Design an engaging and responsive newsletter template for marketing campaigns, ensuring compatibility with major email clients.",
-    "customer": "Delta LLC",
+    "customer": "Noah Wilson",
     "priority": "Low",
     "status": "Open",
     "createdAt": "02/01/2024"
@@ -120,7 +120,7 @@
     "id": 1014,
     "title": "Server upgrade",
     "description": "Upgrade server RAM and storage to handle increased traffic and improve website performance, including downtime planning and testing.",
-    "customer": "Acme Corp",
+    "customer": "Emma Johnson",
     "priority": "High",
     "status": "Open",
     "createdAt": "02/02/2024"
@@ -129,7 +129,7 @@
     "id": 1015,
     "title": "Social media campaign",
     "description": "Launch a social media campaign on Facebook and Instagram, including content creation, scheduling posts, and monitoring engagement metrics.",
-    "customer": "Beta Ltd",
+    "customer": "Liam Smith",
     "priority": "Medium",
     "status": "Open",
     "createdAt": "02/03/2024"

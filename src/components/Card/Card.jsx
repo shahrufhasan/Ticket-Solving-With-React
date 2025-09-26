@@ -1,11 +1,13 @@
 import React from "react";
 import { SlCalender } from "react-icons/sl";
 import { FaCircle } from "react-icons/fa";
+import { toast } from "react-toastify";
 
 const Card = ({ issue, setSelectedCards, selectedCards, data, setData }) => {
   const handleClick = () => {
     if (!selectedCards.find((element) => element.id === issue.id)) {
       setSelectedCards([...selectedCards, issue]);
+      toast.error("In Process");
     }
     setData(
       data.map((elem) =>

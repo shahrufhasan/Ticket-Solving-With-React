@@ -4,6 +4,7 @@ import Card from "../Card/Card";
 import CounterBox from "../CounterBox/CounterBox";
 import { IoCheckmarkDoneCircleSharp } from "react-icons/io5";
 import { MdCancel } from "react-icons/md";
+import { toast } from "react-toastify";
 
 const TicketSection = ({ fetchPromise }) => {
   const initialData = use(fetchPromise);
@@ -14,6 +15,7 @@ const TicketSection = ({ fetchPromise }) => {
     if (!completeCard.find((elem) => elem.id === issue.id)) {
       setCompleteCard([...completeCard, issue]);
       setSelectedCards(selectedCards.filter((elem) => elem.id !== issue.id));
+      toast.success("Completed");
       setData(data.filter((elem) => elem.id !== issue.id));
     }
   };
@@ -52,9 +54,9 @@ const TicketSection = ({ fetchPromise }) => {
             </h1>
 
             {selectedCards.length > 0 ? (
-              selectedCards.map((issue) => (
+              selectedCards.map((issue, index) => (
                 <div
-                  key={issue.id}
+                  key={index}
                   className="bg-gray-100 p-2 rounded-md shadow-md mb-2"
                 >
                   <h2 className="font-semibold text-center mb-4">
@@ -62,7 +64,7 @@ const TicketSection = ({ fetchPromise }) => {
                   </h2>
                   <button
                     onClick={() => handleComplete(issue)}
-                    class="bg-green-500 hover:bg-green-600 text-white font-semibold w-full py-1.5 px-4 rounded"
+                    className="bg-green-500 hover:bg-green-600 text-white font-semibold w-full py-1.5 px-4 rounded"
                   >
                     Task Complete
                   </button>
